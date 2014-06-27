@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2014-6-17: Created.
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20110222 at Tue Jun 17 09:37:02 2014
+ By Кот,,,
+Created by &#208;&#154;&#208;&#190;&#209;&#130;,,, with FontForge 2.0 (http://fontforge.sf.net)
+</metadata>
+<defs>
+<font id="icons" horiz-adv-x="307" >
+  <font-face 
+    font-family="icons"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -28 410 397"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+E001-E005"
+  />
+    <missing-glyph />
+    <glyph glyph-name="uniE001" unicode="&#xe001;" 
+d="M154 294c28 0 51 -23 51 -51s-23 -51 -51 -51s-52 23 -52 51s24 51 52 51zM154 -28l-20 25c-14 17 -134 169 -134 246c0 85 69 154 154 154s153 -69 153 -154c0 -77 -119 -229 -133 -246zM154 346c-56 0 -103 -47 -103 -103c0 -39 57 -127 103 -188
+c46 61 102 149 102 188c0 56 -46 103 -102 103z" />
+    <glyph glyph-name="uniE002" unicode="&#xe002;" horiz-adv-x="410" 
+d="M410 166v0c0 -42 -35 -76 -77 -76c-24 0 -45 10 -59 27c-18 -17 -42 -27 -69 -27c-57 0 -103 45 -103 102s46 102 103 102s102 -45 102 -102v-26c0 -14 12 -25 26 -25c10 0 18 5 22 13c0 0 3 11 3 38c0 85 -68 154 -153 154s-154 -69 -154 -154s69 -154 154 -154
+c20 0 39 5 57 12l19 -48c-24 -9 -49 -15 -76 -15c-113 0 -205 92 -205 205s92 205 205 205s205 -92 205 -205v-26zM205 243c-28 0 -51 -23 -51 -51s23 -51 51 -51s51 23 51 51s-23 51 -51 51z" />
+    <glyph glyph-name="uniE003" unicode="&#xe003;" horiz-adv-x="358" 
+d="M0 13l22 112l90 -90zM45 147l157 157l89 -90l-157 -156zM269 371l89 -89l-44 -45l-90 89z" />
+    <glyph glyph-name="uniE004" unicode="&#xe004;" horiz-adv-x="291" 
+d="M291 77h-231v51h179v128h-153v51h205v-230zM95 8l-95 94l95 95l36 -36l-59 -59l59 -58z" />
+    <glyph glyph-name="uniE005" unicode="&#xe005;" 
+d="M282 192h-103v-102c0 -14 -11 -26 -25 -26s-26 12 -26 26v102h-102c-14 0 -26 12 -26 26s12 25 26 25h102v103c0 14 12 25 26 25s25 -11 25 -25v-103h103c14 0 25 -11 25 -25s-11 -26 -25 -26z" />
+  </font>
+</defs></svg>
