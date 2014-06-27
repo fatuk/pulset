@@ -1,0 +1,24 @@
+* {
+    outline: none;
+    .box-sizing(border-box);
+    &:before, &:after {
+        outline: none;
+        .box-sizing(border-box);
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    min-width: 1024px;
+    margin: 0 auto;
+    .clearfix();
+}
+
+.block {
+    .clearfix();
+    &_dark {
+        background: #4D4D4D;
+        height: 70px;
+    }
+}

@@ -1,0 +1,60 @@
+.site-header {
+    background: #fff;
+    &__block {
+        background: #F1F2F3;
+        min-height: 30px;
+    }
+    &__info {
+        float: left;
+        width: (100% / 3);
+        text-align: center;
+    }
+    &__info-text {
+
+    }
+    &__buttons {
+        float: right;
+        width: (100% / 3);
+        text-align: right;
+    }
+    &__buttons-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .clearfix();
+        display: inline-block;
+    }
+    &__buttons-item {
+        float: left;
+    }
+    &__buttons-link {
+        padding: 10px;
+        background: orange;
+    }
+    &__search {
+        float: left;
+        width: (300px / @base-width * 100%);
+        position: relative;
+        .btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+        }
+    }
+    &__links {
+        float: left;
+    }
+    &__links-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .clearfix();
+    }
+    &__links-item {
+        float: left;
+    }
+    &__links-link {
+
+    }
+}

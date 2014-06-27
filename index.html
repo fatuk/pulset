@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Grunt frontend boilerplate</title>
+    <title>Pulset.ru</title>
     <link rel="stylesheet" href="css/main.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -10,12 +10,143 @@
     <![endif]-->
 </head>
 <body>
-    <h1>
-        <i class="icon icon-address"></i> Hello there! <i class="icon icon-enter"></i>
-    </h1>
-    <h2>
-        <i class="icon icon-edit"></i>
-    </h2>
+    <header class="site-header">
+        <!-- Upper block -->
+        <div class="site-header__block">
+            <div class="container">
+                <!-- Categories -->
+                <div class="categories">
+                    <ul class="categories__list">
+                        <li class="categories__item">
+                            <a href="#" class="categories__label">
+                                Pulset
+                                <i class="icon icon-shevron-down"></i>
+                            </a>
+                            <div class="categories__dropdown"></div>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__label">
+                                Тамбов
+                                <i class="icon icon-shevron-down"></i>
+                            </a>
+                            <div class="categories__dropdown"></div>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__label">
+                                Мебель
+                                <i class="icon icon-shevron-down"></i>
+                            </a>
+                            <div class="categories__dropdown"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Info -->
+                <div class="site-header__info">
+                    <i class="icon icon-search"></i>
+                    <span class="site-header__info-text">
+                        найдено <mark>526 392</mark> компаний
+                    </span>
+                </div>
+                <!-- Button set -->
+                <div class="site-header__buttons">
+                    <ul class="site-header__buttons-list">
+                        <li class="site-header__buttons-item">
+                            <a href="#" class="site-header__buttons-link">
+                                <i class="icon icon-home"></i>
+                            </a>
+                        </li>
+                        <li class="site-header__buttons-item">
+                            <a href="#" class="site-header__buttons-link">
+                                <i class="icon icon-email"></i>
+                            </a>
+                        </li>
+                        <li class="site-header__buttons-item">
+                            <a href="#" class="site-header__buttons-link">
+                                <i class="icon icon-list"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Main block -->
+        <div class="block block_dark">
+            <!-- Search -->
+            <div class="site-header__search">
+                <div class="form">
+                    <form action="#">
+                        <div class="form__row">
+                            <input type="text" class="input input_search" name="search" placeholder="Поиск в Pulset">
+                            <button class="btn btn_search">
+                                <i class="icon icon-search">S</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="site-header__links">
+                <ul class="site-header__links-list">
+                    <li class="site-header__links-item">
+                        <a href="#" class="site-header__links-link">
+                            О проекте
+                        </a>
+                    </li>
+                    <li class="site-header__links-item">
+                        <a href="#" class="site-header__links-link">
+                            Отзывы клиентов
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Pulset club -->
+            <div class="pulset-club">
+                <img src="#" alt="" class="pulset-club__img">
+                <div class="pulset-club__block">
+                    <h3 class="pulset-club__title">
+                        Pulset Club
+                    </h3>
+                    <a href="#" class="pulset-club__link">
+                        6 законов безупречного сервиса
+                    </a>
+                </div>
+                <!-- Pulset club Dropdown -->
+                <div class="pulset-club__dropdown">
+                    <h2 class="pulset-club__dropdown-title">
+                        Другие статьи автора
+                    </h2>
+                    <ul class="pulset-club__dropdown-list">
+                        <li class="pulset-club__dropdown-item">
+                            <a href="#" class="pulset-club__dropdown-link">
+                                Джон Шоул о 8 шагах по созданию культуры обслуживания
+                            </a>
+                        </li>
+                        <li class="pulset-club__dropdown-item">
+                            <a href="#" class="pulset-club__dropdown-link">
+                                Безопасность банковских инвестиций в банковскую сферу Чехии гарантируется
+                            </a>
+                        </li>
+                        <li class="pulset-club__dropdown-item">
+                            <a href="#" class="pulset-club__dropdown-link">
+                                Стиль и гармония
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Authorize -->
+            <div class="authorize">
+                <a href="#" class="btn">
+                    <i class="icon icon-login"></i>
+                    Войти
+                </a>
+                <a href="#" class="btn btn_green">
+                    <i class="icon icon-plus"></i>
+                    Добавить свои товары
+                </a>
+            </div>
+        </div>
+    </header>
 
     <script src="vendors/plugins.min.js"></script>
     <script src="js/main.js"></script>
