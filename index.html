@@ -17,22 +17,25 @@
                 <!-- Categories -->
                 <div class="categories">
                     <ul class="categories__list">
-                        <li class="categories__item categories__item_active">
-                            <a href="#" class="categories__label">
-                                Pulset
+                        <li class="categories__item js-dropdownBtn">
+                            <a href="#countriesDropdown" class="categories__label">
+                                Страна
                             </a>
                         </li>
-                        <li class="categories__item">
-                            <a href="#" class="categories__label">
-                                Тамбов
+                        <li class="categories__item js-dropdownBtn">
+                            <a href="#citiesDropdown" class="categories__label">
+                                Город
                             </a>
-                            <div class="categories__dropdown"></div>
                         </li>
-                        <li class="categories__item">
-                            <a href="#" class="categories__label">
-                                Мебель
+                        <li class="categories__item js-dropdownBtn">
+                            <a href="#unitsDropdown" class="categories__label">
+                                Раздел
                             </a>
-                            <div class="categories__dropdown"></div>
+                        </li>
+                        <li class="categories__item js-dropdownBtn">
+                            <a href="#categoriesDropdown" class="categories__label">
+                                Категория
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +69,7 @@
             </div>
         </div>
         <!-- Dropdown -->
-        <div class="categories-dropdown">
+        <div class="categories-dropdown js-dropdown" id="countriesDropdown">
             <div class="container container_padding">
                 <!-- Dropdown column -->
                 <div class="categories-dropdown__column">
