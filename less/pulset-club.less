@@ -1,24 +1,69 @@
 .pulset-club {
-    background: #5D5D5D;
+    background: #5d5d5d;
     width: (290px / @base-width * 100%);
-    float: left;
+    height: 70px;
+    float: right;
+    position: relative;
+    .clearfix();
+    padding: 20px;
+    padding-top:15px;
+    margin-left: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+    .transition(background .3s);
+    &:hover {
+        background: #6c6c6c;
+        .pulset-club__dropdown {
+            display: block;
+        }
+    }
     &__img {
-
+        float: left;
+        width: 40px;
+        height: 40px;
+        .border-radius(50%);
+        margin-right: 15px;
     }
     &__block {
-
+        float: left;
+        .clearfix();
+        width: (200px / 290px * 100% );
     }
     &__title {
-
+        .em(font-size, 13px);
+        font-weight: normal;
+        color: #fa9e75;
+        margin: 0;
+        display: inline;
     }
     &__link {
-
+        display: inline-block;
+        color: #f1f2f3;
+        .em(font-size, 11px);
     }
     &__dropdown {
-
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 67px;
+        background: #4D4D4D;
+        width: 100%;
+        .border-radius(4px);
+        padding: 20px;
+        z-index: 10;
+        &:after {
+            .triangle(up, 0.5em, #fff);
+            position: absolute;
+            top: -0.5em;
+            border-bottom-color: #4D4D4D;
+            left: 30px;
+        }
     }
     &__dropdown-title {
-
+        .em(font-size, 13px);
+        color: #fa9e75;
+        margin: 0;
+        margin-bottom: 15px;
     }
     &__dropdown-list {
         list-style: none;
@@ -26,9 +71,14 @@
         margin: 0;
     }
     &__dropdown-item {
-
+        margin-bottom: 13px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__dropdown-link {
-
+        color: #f1f2f3;
+        line-height: 20px;
+        display: inline-block;
     }
 }

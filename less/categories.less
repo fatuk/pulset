@@ -9,11 +9,22 @@
     }
     &__item {
         float: left;
-        padding: 10px;
         cursor: pointer;
+        padding: 10px;
+        &_active {
+            background: #fff;
+            border-bottom: none;
+        }
     }
     &__label {
-
+        display: inline-block;
+        .em(font-size, 11px);
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: dashed 1px;
+        &:hover {
+            border-bottom: none;
+        }
     }
     &__dropdown {
 

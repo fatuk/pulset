@@ -17,24 +17,44 @@
                 <!-- Categories -->
                 <div class="categories">
                     <ul class="categories__list">
-                        <li class="categories__item">
+                        <li class="categories__item categories__item_active">
                             <a href="#" class="categories__label">
                                 Pulset
-                                <i class="icon icon-shevron-down"></i>
                             </a>
-                            <div class="categories__dropdown"></div>
+                            <div class="categories__dropdown">
+                                <h2 class="categories__dropdown-title">А-И</h2>
+                                <ul class="categories__dropdown-list">
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">республика Адыгея</a>
+                                    </li>
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">Алтайский край</a>
+                                    </li>
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">Амурская область</a>
+                                    </li>
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">Архангельская область</a>
+                                    </li>
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">Астраханская область</a>
+                                    </li>
+                                    <li class="categories__dropdown-item">
+                                        <a href="#" class="categories__dropdown-link">респ. Башкортостан</a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </li>
                         <li class="categories__item">
                             <a href="#" class="categories__label">
                                 Тамбов
-                                <i class="icon icon-shevron-down"></i>
                             </a>
                             <div class="categories__dropdown"></div>
                         </li>
                         <li class="categories__item">
                             <a href="#" class="categories__label">
                                 Мебель
-                                <i class="icon icon-shevron-down"></i>
                             </a>
                             <div class="categories__dropdown"></div>
                         </li>
@@ -70,80 +90,83 @@
             </div>
         </div>
         <!-- Main block -->
-        <div class="block block_dark">
-            <!-- Search -->
-            <div class="site-header__search">
-                <div class="form">
-                    <form action="#">
-                        <div class="form__row">
-                            <input type="text" class="input input_search" name="search" placeholder="Поиск в Pulset">
-                            <button class="btn btn_search">
-                                <i class="icon icon-search">S</i>
-                            </button>
-                        </div>
-                    </form>
+        <div class="block block_dark block_orange-line">
+            <div class="container">
+                <!-- Search -->
+                <div class="site-header__search">
+                    <div class="form">
+                        <form action="#">
+                            <div class="form__row">
+                                <input type="text" class="input input_search" name="search" placeholder="Поиск в Pulset">
+                                <button class="btn btn_search">
+                                    <i class="icon icon-search">S</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <!-- Links -->
-            <div class="site-header__links">
-                <ul class="site-header__links-list">
-                    <li class="site-header__links-item">
-                        <a href="#" class="site-header__links-link">
-                            О проекте
-                        </a>
-                    </li>
-                    <li class="site-header__links-item">
-                        <a href="#" class="site-header__links-link">
-                            Отзывы клиентов
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Pulset club -->
-            <div class="pulset-club">
-                <img src="#" alt="" class="pulset-club__img">
-                <div class="pulset-club__block">
-                    <h3 class="pulset-club__title">
-                        Pulset Club
-                    </h3>
-                    <a href="#" class="pulset-club__link">
-                        6 законов безупречного сервиса
-                    </a>
-                </div>
-                <!-- Pulset club Dropdown -->
-                <div class="pulset-club__dropdown">
-                    <h2 class="pulset-club__dropdown-title">
-                        Другие статьи автора
-                    </h2>
-                    <ul class="pulset-club__dropdown-list">
-                        <li class="pulset-club__dropdown-item">
-                            <a href="#" class="pulset-club__dropdown-link">
-                                Джон Шоул о 8 шагах по созданию культуры обслуживания
+                <!-- Links -->
+                <div class="site-header__links">
+                    <ul class="site-header__links-list">
+                        <li class="site-header__links-item">
+                            <a href="#" class="site-header__links-link">
+                                О проекте
                             </a>
                         </li>
-                        <li class="pulset-club__dropdown-item">
-                            <a href="#" class="pulset-club__dropdown-link">
-                                Безопасность банковских инвестиций в банковскую сферу Чехии гарантируется
-                            </a>
-                        </li>
-                        <li class="pulset-club__dropdown-item">
-                            <a href="#" class="pulset-club__dropdown-link">
-                                Стиль и гармония
+                        <li class="site-header__links-item">
+                            <a href="#" class="site-header__links-link">
+                                Отзывы клиентов
                             </a>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <!-- Authorize -->
-            <div class="authorize">
-                <a href="#" class="btn">
-                    <i class="icon icon-login"></i>
-                    Войти
-                </a>
-                <a href="#" class="btn btn_green">
-                    <i class="icon icon-plus"></i>
-                    Добавить свои товары
-                </a>
+                <!-- Authorize -->
+                <div class="authorize">
+                    <a href="#" class="btn">
+                        <i class="icon icon-plus"></i>
+                        Войти
+                    </a>
+                    <a href="#" class="btn btn_green">
+                        <i class="icon icon-plus"></i>
+                        Добавить свои товары
+                    </a>
+                </div>
+                <!-- Pulset club -->
+                <div class="pulset-club">
+                    <img src="img/avatar.jpg" alt="" class="pulset-club__img">
+                    <div class="pulset-club__block">
+                        <h3 class="pulset-club__title">
+                            Pulset Club
+                        </h3>
+                        <a href="#" class="pulset-club__link">
+                            6 законов безупречного сервиса
+                        </a>
+                    </div>
+                    <!-- Pulset club Dropdown -->
+                    <div class="pulset-club__dropdown">
+                        <h2 class="pulset-club__dropdown-title">
+                            Другие статьи автора
+                        </h2>
+                        <ul class="pulset-club__dropdown-list">
+                            <li class="pulset-club__dropdown-item">
+                                <a href="#" class="pulset-club__dropdown-link">
+                                    Джон Шоул о 8 шагах по созданию культуры обслуживания
+                                </a>
+                            </li>
+                            <li class="pulset-club__dropdown-item">
+                                <a href="#" class="pulset-club__dropdown-link">
+                                    Безопасность банковских инвестиций в банковскую сферу Чехии гарантируется
+                                </a>
+                            </li>
+                            <li class="pulset-club__dropdown-item">
+                                <a href="#" class="pulset-club__dropdown-link">
+                                    Стиль и гармония
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-header__orange-line"></div>
             </div>
         </div>
     </header>
