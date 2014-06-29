@@ -8,14 +8,25 @@
         .clearfix();
     }
     &__item {
+        position: relative;
         float: left;
         cursor: pointer;
-        padding: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 20px;
         &.active {
             background: #fff;
             .categories__label {
                 border-bottom: none;
             }
+            .icon {
+                background: url('../img/icons/shevron-up.png') no-repeat center;
+            }
+        }
+        .icon {
+            position: absolute;
+            top: 5px;
+            right: 0;
         }
     }
     &__label {

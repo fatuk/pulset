@@ -9,7 +9,7 @@
         float: left;
         width: (100% / 3);
         text-align: center;
-        margin-top: 8px;
+        margin-top: 4px;
     }
     &__info-text {
         .em(font-size, 11px);
@@ -23,6 +23,7 @@
     &__buttons {
         float: right;
         width: (100% / 3);
+        height: 30px;
         text-align: right;
     }
     &__buttons-list {
@@ -36,8 +37,14 @@
         float: left;
     }
     &__buttons-link {
-        padding: 10px;
-        background: orange;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        display: inline-block;
+        .transition(background .3s);
+        &:hover {
+            background: #fff;
+        }
     }
     &__search {
         float: left;
