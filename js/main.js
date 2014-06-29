@@ -19,4 +19,36 @@ $(function() {
 
     // Form styler
     $('.js-radio, .js-select').styler();
+
+    // Search dropdown
+    var $searchInput = $('.js-searchInput'),
+        $searchDropdown = $('.js-searchDropdown'),
+        $searchBlock = $('.js-searchBlock'),
+        $headerLinks = $('.js-headerLinks');
+
+
+    $('.js-searchInput, .js-searchDropdown').on('focus click', function(event) {
+        event.stopPropagation();
+        if (!$searchBlock.hasClass('site-header__search_expanded')) {
+            $searchBlock.animate({
+                width: '42.4%'
+            }, 'fast', function() {
+                $searchDropdown.addClass('expanded').slideDown('fast');
+            }).addClass('site-header__search_expanded');
+
+            $headerLinks.hide();
+        }
+
+    });
+
+    $('html').on('click', function(event) {
+        $searchDropdown.addClass('expanded').slideUp('fast', function() {
+            $searchBlock.animate({
+                width: '23.2%'
+            }, 'fast', function() {
+                $headerLinks.show();
+            }).removeClass('site-header__search_expanded');
+        });
+    });
+
 });
