@@ -19,25 +19,25 @@
                     <ul class="categories__list">
                         <li class="categories__item js-dropdownBtn">
                             <a href="#countriesDropdown" class="categories__label">
-                                Страна
+                                Россия
                                 <i class="icon icon-shevron-down"></i>
                             </a>
                         </li>
                         <li class="categories__item js-dropdownBtn">
                             <a href="#citiesDropdown" class="categories__label">
-                                Город
+                                Табов
                                 <i class="icon icon-shevron-down"></i>
                             </a>
                         </li>
                         <li class="categories__item js-dropdownBtn">
                             <a href="#unitsDropdown" class="categories__label">
-                                Раздел
+                                Товары
                                 <i class="icon icon-shevron-down"></i>
                             </a>
                         </li>
                         <li class="categories__item js-dropdownBtn">
                             <a href="#categoriesDropdown" class="categories__label">
-                                Категория
+                                Мебель
                                 <i class="icon icon-shevron-down"></i>
                             </a>
                         </li>
@@ -201,7 +201,7 @@
         <div class="block block_dark block_orange-line">
             <div class="container container_height-70">
                 <!-- Search -->
-                <div class="site-header__search">
+                <div class="site-header__search site-header__search_expanded">
                     <div class="form">
                         <form action="#">
                             <div class="form__row">
@@ -209,6 +209,71 @@
                                 <button class="btn btn_search">
                                     <i class="icon icon-search-input"></i>
                                 </button>
+                            </div>
+                            <!-- Search dropdown -->
+                            <div class="search-dropdown">
+                                <div class="search-dropdown__column">
+                                    <h3 class="search-dropdown__title">Где искать</h3>
+                                    <div class="form__row">
+                                        <label class="label">
+                                            <input checked type="radio" name="search_category" class="radio js-radio">
+                                            Товары в магазине
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="label">
+                                            <input type="radio" name="search_category" class="radio js-radio">
+                                            Товары оптом
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="label">
+                                            <input type="radio" name="search_category" class="radio js-radio">
+                                            Товары от производителя
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="label">
+                                            <input type="radio" name="search_category" class="radio js-radio">
+                                            Бизнес-раздел «Услуги»
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-dropdown__column">
+                                    <h3 class="search-dropdown__title">Расположение</h3>
+                                    <div class="form__row">
+                                        <select name="" class="select js-select">
+                                            <option>Россия</option>
+                                            <option value="">item 2</option>
+                                            <option value="">item 3</option>
+                                            <option value="">item 4</option>
+                                            <option value="">item 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__row">
+                                        <select name="" class="select js-select">
+                                            <option>Во всех регионах</option>
+                                            <option value="">item 2</option>
+                                            <option value="">item 3</option>
+                                            <option value="">item 4</option>
+                                            <option value="">item 5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__row">
+                                        <select name="" class="select js-select">
+                                            <option>Тамбов</option>
+                                            <option value="">item 2</option>
+                                            <option value="">item 3</option>
+                                            <option value="">item 4</option>
+                                            <option value="">item 5</option>
+                                        </select>
+                                    </div>
+                                    <!-- Extended search link -->
+                                    <a href="#" class="form__link form__link_right">
+                                        <i class="icon icon-extended-search"></i>
+                                        Раширенный поиск
+                                    </a>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -230,13 +295,13 @@
                 </div>
                 <!-- Authorize -->
                 <div class="authorize">
-                    <a href="#" class="btn">
-                        <i class="icon icon-plus"></i>
-                        Войти
-                    </a>
                     <a href="#" class="btn btn_green">
                         <i class="icon icon-plus"></i>
                         Добавить свои товары
+                    </a>
+                    <a href="#" class="btn">
+                        <i class="icon icon-login"></i>
+                        Войти
                     </a>
                 </div>
                 <!-- Pulset club -->

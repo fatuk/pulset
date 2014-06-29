@@ -9,11 +9,14 @@
     }
     &__item {
         position: relative;
+        height: 30px;
         float: left;
         cursor: pointer;
         padding: 5px;
         padding-left: 10px;
         padding-right: 20px;
+        padding-bottom: 0;
+        .transition(background .3s);
         &.active {
             background: #fff;
             .categories__label {
@@ -27,6 +30,12 @@
             position: absolute;
             top: 5px;
             right: 0;
+        }
+        &:hover {
+            background: #fff;
+            a {
+                border-bottom: none;
+            }
         }
     }
     &__label {

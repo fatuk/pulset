@@ -16,4 +16,7 @@ $(function() {
             $(currentDropdownId).slideDown('fast');
         }
     });
+
+    // Form styler
+    $('.js-radio, .js-select').styler();
 });
