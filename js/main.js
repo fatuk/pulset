@@ -30,7 +30,7 @@ $(function() {
     $('.js-searchInput, .js-searchDropdown').on('focus click', function(event) {
         event.stopPropagation();
         if (!$searchBlock.hasClass('site-header__search_expanded')) {
-            $searchBlock.animate({
+            $searchBlock.velocity({
                 width: '42.4%'
             }, 'fast', function() {
                 $searchDropdown.addClass('expanded').slideDown('fast');
@@ -43,7 +43,7 @@ $(function() {
 
     $('html').on('click', function(event) {
         $searchDropdown.addClass('expanded').slideUp('fast', function() {
-            $searchBlock.animate({
+            $searchBlock.velocity({
                 width: '23.2%'
             }, 'fast', function() {
                 $headerLinks.show();
