@@ -1,51 +1,54 @@
-.categories {
-    float: left;
-    width: (100% / 3);
-    &__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        .clearfix();
-    }
-    &__item {
-        position: relative;
-        height: 30px;
+.pulset {
+    .categories {
         float: left;
-        cursor: pointer;
-        padding: 5px;
-        padding-left: 10px;
-        padding-right: 20px;
-        padding-bottom: 0;
-        .transition(background .3s);
-        &.active {
-            background: #fff;
-            .categories__label {
-                border-bottom: none;
+        width: (100% / 3);
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .clearfix();
+        }
+        &__item {
+            position: relative;
+            height: 30px;
+            float: left;
+            cursor: pointer;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-bottom: 0;
+            .transition(background .3s);
+            &.active {
+                background: #fff;
+                .categories__label {
+                    border-bottom: none;
+                }
+                .icon {
+                    // background: url('../img/icons/shevron-up.png') no-repeat center;
+                    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5RkQxRTJCMUZGMEExMUUzQTIzM0FERjIyREQ3OUI3NCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5RkQxRTJCMkZGMEExMUUzQTIzM0FERjIyREQ3OUI3NCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjlGRDFFMkFGRkYwQTExRTNBMjMzQURGMjJERDc5Qjc0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjlGRDFFMkIwRkYwQTExRTNBMjMzQURGMjJERDc5Qjc0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HeAkPwAAAGhJREFUeNpiNDMzY4ACLiBeBMTeQLwTiGOB+DNIggmqgBuItwNxMBCzArE/lM8HU8QDFbAD4otArA3E54DYGirOD1K0HohtgfgCELsA8U0ofQaIrYB4K8ykk1CJN1Dr30P5R0BOAQgwABO1EoVq84fDAAAAAElFTkSuQmCC') no-repeat center;
+                }
             }
             .icon {
-                background: url('../img/icons/shevron-up.png') no-repeat center;
+                position: absolute;
+                top: 5px;
+                right: 0;
+            }
+            &:hover {
+                background: #fff;
+                a {
+                    border-bottom: none;
+                }
             }
         }
-        .icon {
-            position: absolute;
-            top: 5px;
-            right: 0;
-        }
-        &:hover {
-            background: #fff;
-            a {
+        &__label {
+            display: inline-block;
+            .em(font-size, 11px);
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: dashed 1px;
+            &:hover {
                 border-bottom: none;
             }
-        }
-    }
-    &__label {
-        display: inline-block;
-        .em(font-size, 11px);
-        text-transform: uppercase;
-        text-decoration: none;
-        border-bottom: dashed 1px;
-        &:hover {
-            border-bottom: none;
         }
     }
 }

@@ -1,29 +1,31 @@
-.btn {
-    text-align: center;
-    background: #fff;
-    border: none;
-    .border-radius(3px);
-    height: 30px;
-    text-decoration: none;
-    padding-right: 20px;
-    padding-left: 15px;
-    padding-top: 5px;
-    float: left;
-    .transition(background .3s);
-    &_green {
-        background: #2CBC9B;
-        color: #fff;
+.pulset {
+    .btn {
+        text-align: center;
+        background: #fff;
+        border: none;
+        .border-radius(3px);
+        height: 30px;
+        text-decoration: none;
+        padding-right: 20px;
+        padding-left: 15px;
+        padding-top: 5px;
+        float: left;
+        .transition(background .3s);
+        &_green {
+            background: #2CBC9B;
+            color: #fff;
+            &:hover {
+                background: darken(#2CBC9B, 10%) !important;
+            }
+            &:active {
+                background: darken(#2CBC9B, 20%) !important;
+            }
+        }
         &:hover {
-            background: darken(#2CBC9B, 10%) !important;
+            background: darken(#fff, 10%);
         }
         &:active {
-            background: darken(#2CBC9B, 20%) !important;
+            background: darken(#fff, 20%);
         }
-    }
-    &:hover {
-        background: darken(#fff, 10%);
-    }
-    &:active {
-        background: darken(#fff, 20%);
     }
 }

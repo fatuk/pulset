@@ -17,9 +17,6 @@ $(function() {
         }
     });
 
-    // Form styler
-    $('.js-radio, .js-select').styler();
-
     // Search dropdown
     var $searchInput = $('.js-searchInput'),
         $searchDropdown = $('.js-searchDropdown'),
@@ -27,13 +24,19 @@ $(function() {
         $headerLinks = $('.js-headerLinks');
 
 
+    // Form styler
+    $('.js-radio, .js-select').styler();
+
     $('.js-searchInput, .js-searchDropdown').on('focus click', function(event) {
         event.stopPropagation();
+
         if (!$searchBlock.hasClass('site-header__search_expanded')) {
             $searchBlock.animate({
                 width: '42.4%'
             }, 'fast', function() {
-                $searchDropdown.addClass('expanded').slideDown('fast');
+                $searchDropdown.addClass('expanded').slideDown('fast', function() {
+                    $('.js-select').trigger('refresh');
+                });
             }).addClass('site-header__search_expanded');
 
             $headerLinks.hide();
