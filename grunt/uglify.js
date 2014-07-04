@@ -1,7 +1,7 @@
 module.exports = {
     dist: {
         options: {
-            sourceMap: false
+            sourceMap: true
         },
         files: {
             'vendors/plugins.min.js': [

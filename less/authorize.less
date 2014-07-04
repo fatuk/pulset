@@ -1,16 +1,14 @@
-.pulset {
-    .authorize {
+.authorize {
+    float: right;
+    padding-left: (20px / @base-width * 100%);
+    padding-right: (10px / @base-width * 100%);
+    padding-top: 19px;
+    .clearfix();
+    .btn {
+        margin-left: 20px;
         float: right;
-        padding-left: (20px / @base-width * 100%);
-        padding-right: (10px / @base-width * 100%);
-        padding-top: 19px;
-        .clearfix();
-        .btn {
-            margin-left: 20px;
-            float: right;
-            &:last-child {
-                margin-left: 0;
-            }
+        &:last-child {
+            margin-left: 0;
         }
     }
 }
