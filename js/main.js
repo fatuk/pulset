@@ -25,7 +25,7 @@ $(function() {
 
 
     // Form styler
-    $('.js-radio, .js-select').styler();
+    $('.js-radio, .js-checkbox, .js-select').styler();
 
     $('.js-searchInput, .js-searchDropdown').on('focus click', function(event) {
         event.stopPropagation();
