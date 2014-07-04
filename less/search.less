@@ -1,0 +1,45 @@
+.search {
+    margin-bottom: 30px;
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4d4d4d;
+        margin-top: 0;
+    }
+    &__dashed {
+        border-bottom: dashed 1px #4d4d4d;
+        font-size: 18px;
+        text-decoration: none;
+        &:hover {
+            color: #44c1a3;
+        }
+    }
+    &__params {
+        margin-bottom: 15px;
+    }
+    &__params-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .clearfix();
+    }
+    &__params-item {
+        float: left;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__params-link {
+        font-size: 13px;
+        color: #4d4d4d;
+        position: relative;
+        padding-left: 15px;
+        &:before {
+            content: url('../img/icons/shevron-down.png');
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

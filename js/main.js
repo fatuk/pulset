@@ -44,6 +44,7 @@ $(function() {
 
     });
 
+    // Close search
     $('html').on('click', function(event) {
         $searchDropdown.addClass('expanded').slideUp('fast', function() {
             $searchBlock.animate({
@@ -53,5 +54,19 @@ $(function() {
             }).removeClass('site-header__search_expanded');
         });
     });
+
+    // Slider
+    $(".js-searchSlider").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function(event, ui) {
+            $("#fromPrice").val(ui.values[0]);
+            $("#toPrice").val(ui.values[1]);
+        }
+    });
+    $("#fromPrice").val($(".js-searchSlider").slider("values", 0));
+    $("#toPrice").val($(".js-searchSlider").slider("values", 1));
 
 });

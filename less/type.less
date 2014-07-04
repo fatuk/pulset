@@ -20,6 +20,23 @@ a {
     .size(20px);
 }
 
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #800a0a;
+    position: relative;
+    padding-left: 10px;
+    &:before {
+        content: url('../img/icons/green-line.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 11px;
+    }
+}
+
 h3 {
     .em(font-size, 13px);
     font-weight: normal;

@@ -1,5 +1,19 @@
 .select {
     width: 100%;
+    &_half {
+        width: 50px;
+    }
+    &_green {
+        .jq-selectbox__select {
+            border-color: #2cbc9b;
+        }
+        .jq-selectbox__trigger-arrow {
+            background: none;
+        }
+        .jq-selectbox__trigger {
+            border-left: solid 1px #2cbc9b;
+        }
+    }
 }
 
 .jq-selectbox__select {

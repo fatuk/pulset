@@ -1,0 +1,33 @@
+.subheader {
+    .clearfix();
+    margin-bottom: 40px;
+    &__column {
+        width: (280 / @base-width * 100%);
+        float: left;
+        .clearfix();
+        &_wide {
+            width: (690 / @base-width * 100%);
+        }
+        &_padding-left {
+            padding-left: 20px;
+        }
+    }
+    &__link {
+        font-size: 14px;
+        color: #0e8391;
+    }
+    &__logo {
+        width: 100%;
+    }
+    &__yandex-direct {
+        width: 48%;
+        height: 142px;
+        float: left;
+        background: #ccc;
+        padding: 20px;
+        margin-right: 4%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

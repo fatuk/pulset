@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pulset.ru</title>
+    <link rel="stylesheet" href="css/jqueryui/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=9" >
     <!--[if lt IE 9]>
@@ -578,6 +579,108 @@
                 </div>
             </div>
         </header>
+        <!-- Sub header -->
+        <div class="subheader">
+            <div class="container">
+                <div class="subheader__column">
+                    <a href="#" class="subheader__link">
+                        <img src="img/logo.png" alt="" class="subheader__logo">
+                    </a>
+                </div>
+                <!-- Yandex direct -->
+                <div class="subheader__column subheader__column_wide">
+                    <div class="subheader__yandex-direct">Yandex direct</div>
+                    <div class="subheader__yandex-direct">Yandex direct</div>
+                </div>
+                <div class="subheader__column subheader__column_padding-left">
+                    <h1 class="subheader__title">Уточните</h1>
+                    <a href="#" class="subheader__link">
+                        Правильный ваыбор мебели. Советы, статьи, предложения экспертов
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Left aside -->
+            <aside class="aside aside_padding-left">
+                <h1 class="aside__title">
+                    Содержание страницы
+                </h1>
+            </aside>
+            <!-- Main -->
+            <main class="main-container">
+                <!-- Search -->
+                <div class="search">
+                    <h2 class="search__title">
+                        Цена на <a href="#" class="search__dashed">Строительные материалы</a> в <a href="#" class="search__dashed">Новом Уренгое</a>
+                    </h2>
+                    <div class="search__params">
+                        <ul class="search__params-list">
+                            <li class="search__params-item">
+                                <a href="#" class="search__params-link">
+                                    Изменить раздел поиска
+                                </a>
+                            </li>
+                            <li class="search__params-item">
+                                <a href="#" class="search__params-link">
+                                    Изменить регион поиска
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Search filter -->
+                    <div class="search-filter">
+                        <div class="search-filter__i">
+                            <div class="form">
+                                <form action="#">
+                                    <div class="search-filter__container">
+                                        <!-- Form row -->
+                                        <div class="form__row form__row_price">
+                                            <label for="fromPrice" class="label label_big">
+                                                Цена <span class="label__grey">(руб.)</span>
+                                            </label>
+                                            <input id="fromPrice" type="text" class="input input_border" placeholder="от">
+                                            <div class="js-searchSlider search-filter__slider"></div>
+                                            <input id="toPrice" type="text" class="input input_border" placeholder="до">
+                                        </div>
+                                        <!-- Form row -->
+                                        <div class="form__row">
+                                            <div class="form__cell">
+                                                <select name="" class="select select_green js-select">
+                                                    <option>Все подразделы</option>
+                                                    <option value="">item 1</option>
+                                                    <option value="">item 2</option>
+                                                    <option value="">item 3</option>
+                                                    <option value="">item 4</option>
+                                                    <option value="">item 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__cell">
+                                                <select name="" class="select select_green js-select">
+                                                    <option>Все товары</option>
+                                                    <option value="">item 1</option>
+                                                    <option value="">item 2</option>
+                                                    <option value="">item 3</option>
+                                                    <option value="">item 4</option>
+                                                    <option value="">item 5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form__row"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Left aside -->
+            <aside class="aside aside_padding-left-20">
+                <h1 class="aside__title">
+                    Найти в Pulset
+                </h1>
+            </aside>
+        </div>
         <!-- For sticky footer -->
         <div class="push"></div>
     </div>

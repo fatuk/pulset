@@ -49,12 +49,15 @@ html, body {
 .site-footer {
     height: @footer-height;
 }
-
 .wrap {
     margin-bottom: -@footer-height;
     min-height: 100%;
 }
-
 .push {
     height: @footer-height;
+}
+
+.main-container {
+    width: (690 / @base-width * 100%);
+    float: left;
 }
