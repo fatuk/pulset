@@ -1,0 +1,167 @@
+.goods {
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        .clearfix();
+        border: solid 1px #cccccc;
+        position: relative;
+        margin-bottom: 20px;
+        &_in-stock {
+            &:before {
+                content: url('../img/icons/in-stock-label.png');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_manufacturer {
+            &:before {
+                content: url('../img/icons/manufacturer-label.png');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_wholesale {
+            &:before {
+                content: url('../img/icons/wholesale-label.png');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &__img {
+        width: (150px / 690px * 100%);
+        float: left;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__container {
+        float: left;
+        width: (360px / 690px * 100%);
+        padding: 20px;
+        &_no-padding {
+            padding: 0 20px;
+        }
+    }
+    &__title {
+        margin: 0;
+    }
+    &__link {
+        font-size: 15px;
+        font-weight: bold;
+        color: #0e8391;
+    }
+    &__description {
+        font-size: 13px;
+        color: #000;
+    }
+    &__price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #525252;
+        float: left;
+        margin: 0;
+    }
+    &__price-unit {
+        font-weight: normal;
+        color: #626262;
+    }
+    &__availability {
+        font-size: 12px;
+        color: #3caf93;
+        float: right;
+        &:before {
+            content: url('../img/icons/in-stock.png');
+            margin-right: 5px;
+        }
+    }
+    &__rating {
+        float: right;
+        margin-top: 8px;
+    }
+    &__rating-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .clearfix();
+    }
+    &__rating-item {
+        float: left;
+        width: 13px;
+        height: 13px;
+        background: url('../img/icons/star.png') no-repeat;
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_not-active {
+            background: url('../img/icons/star-not-active.png') no-repeat;
+        }
+    }
+    &__info {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: (180px / 690px * 100%);
+        height: 100%;
+        background: #EDEDED;
+        padding: 20px;
+        border-left: solid 1px #e6e6e6;
+    }
+    &__info-link {
+        font-size: 12px;
+        color: #0e8391;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    &__phone {
+        font-size: 12px;
+        color: #4d4d4d;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 25px;
+        &:before {
+            content: url('../img/icons/phone.png');
+            position: absolute;
+            left: -3px;
+            top: -2px;
+        }
+    }
+    &__phone-link {
+        font-size: 12px;
+        text-decoration: none;
+        border-bottom: dotted 1px #4d4d4d;
+    }
+    &__phone-number {
+        display: none;
+    }
+    &__shipping {
+        font-size: 12px;
+        color: #4d4d4d;
+        position: relative;
+        padding-left: 25px;
+        &:before {
+            content: url('../img/icons/shipping.png');
+            position: absolute;
+            left: -3px;
+            top: 0;
+        }
+    }
+    &__more {
+        position: absolute;
+        bottom: 20px;
+    }
+    &__yandex-direct {
+        width: 100%;
+        height: 340px;
+        background: #ccc;
+        padding: 20px;
+        .opacity(.2);
+    }
+}
