@@ -1,0 +1,50 @@
+.pagination {
+    float: right;
+    .clearfix();
+    &__info {
+        font-size: 13px;
+        color: #303030;
+        float: left;
+        margin-top: 8px;
+        margin-right: 25px;
+    }
+    &__container {
+        float: left;
+    }
+    &__first {
+        background: url('../img/icons/double-left.png') no-repeat center center;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: middle;
+        &:hover {
+            background: url('../img/icons/double-left-hover.png') no-repeat center center;
+        }
+    }
+    &__last {
+        background: url('../img/icons/double-right.png') no-repeat center center;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: middle;
+        &:hover {
+            background: url('../img/icons/double-right-hover.png') no-repeat center center;
+        }
+    }
+    &__prev {
+        background: url('../img/icons/left.png') no-repeat center center;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: middle;
+        &:hover {
+            background: url('../img/icons/left-hover.png') no-repeat center center;
+        }
+    }
+    &__next {
+        background: url('../img/icons/right.png') no-repeat center center;
+        display: inline-block;
+        padding: 10px;
+        vertical-align: middle;
+        &:hover {
+            background: url('../img/icons/right-hover.png') no-repeat center center;
+        }
+    }
+}
