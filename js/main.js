@@ -66,7 +66,12 @@ $(function() {
             $("#toPrice").val(ui.values[1]);
         }
     });
-    $("#fromPrice").val($(".js-searchSlider").slider("values", 0));
-    $("#toPrice").val($(".js-searchSlider").slider("values", 1));
+
+    // Show phone
+    $('.js-showPhone').on('click', function(event) {
+        event.preventDefault();
+        $(this).hide();
+        $(this).next().show();
+    });
 
 });

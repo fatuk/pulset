@@ -10,6 +10,7 @@ module.exports = {
                 'bower_components/jqueryui/ui/widget.js',
                 'bower_components/jqueryui/ui/mouse.js',
                 'bower_components/jqueryui/ui/slider.js',
+                'bower_components/colorbox/jquery.colorbox.js',
                 'js.plugins/jquery.formstyler.js'
             ]
         }

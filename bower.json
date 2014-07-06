@@ -17,6 +17,7 @@
     "jquery": "1.11.1",
     "3l": "~1.4.4",
     "normalize-less": "*",
-    "jqueryui": "~1.11.0"
+    "jqueryui": "~1.11.0",
+    "colorbox": "~1.5.10"
   }
 }
