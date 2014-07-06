@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Pulset.ru</title>
     <link rel="stylesheet" href="css/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=9" >
     <!--[if lt IE 9]>
@@ -442,7 +443,7 @@
                             <form action="#">
                                 <div class="form__row">
                                     <input onmousedown="event.cancelBubble = true;" ontouchstart="event.cancelBubble = true;" type="text" class="input input_search js-searchInput" name="search" placeholder="Поиск в Pulset">
-                                    <button class="btn btn_search">
+                                    <button class="btn">
                                         <i class="icon icon-search-input"></i>
                                     </button>
                                 </div>
@@ -657,12 +658,12 @@
                     <div class="search__params">
                         <ul class="search__params-list">
                             <li class="search__params-item">
-                                <a href="#" class="search__params-link">
+                                <a href="#searchUnit" class="search__params-link js-modal">
                                     Изменить раздел поиска
                                 </a>
                             </li>
                             <li class="search__params-item">
-                                <a href="#" class="search__params-link">
+                                <a href="#searchRegion" class="search__params-link js-modal">
                                     Изменить регион поиска
                                 </a>
                             </li>
@@ -1188,6 +1189,160 @@
             </nav>
         </div>
     </footer>
+    <!-- Search unit -->
+    <div class="hide">
+        <div id="searchUnit">
+            <div class="categories-dropdown categories-dropdown_modal">
+                <div class="container1 container_padding1">
+                    <h2 class="categories-dropdown__title">
+                        Укажите новый раздел поиска
+                    </h2>
+                    <!-- Dropdown column -->
+                    <div class="categories-dropdown__column">
+                        <ul class="categories-dropdown__list">
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Авто</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Бытовая техника</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для дома</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для офиса</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Интимные товары</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Книги, полиграфическая и рекламная продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Dropdown column -->
+                    <div class="categories-dropdown__column">
+                        <ul class="categories-dropdown__list">
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Ритуальные принадлежности (венки, гробы и др.)</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Производство энергоносителей</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для дома</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для офиса</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Интимные товары</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Книги, полиграфическая и рекламная продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Search region -->
+    <div class="hide">
+        <div id="searchRegion">
+            <div class="categories-dropdown categories-dropdown_modal">
+                <div class="container1 container_padding1">
+                    <!-- Region block -->
+                    <div class="region-block">
+                        <img src="http://pulset.ru/img/g_68.gif" alt="" class="region-block__img">
+                        <div class="region-block__container">
+                            <h3 class="region-block__title">
+                                Цены на авто и автозапчасти в Тамбовской области:
+                            </h3>
+                            <ul class="region-block__list">
+                                <li class="region-block__item">
+                                    <a href="#" class="region-block__link active">
+                                        Тамбов
+                                    </a>
+                                </li>
+                                <li class="region-block__item">
+                                    <a href="#" class="region-block__link active">
+                                        Жердевка
+                                    </a>
+                                </li>
+                                <li class="region-block__item">
+                                    <a href="#" class="region-block__link active">
+                                        Кирсанов
+                                    </a>
+                                </li>
+                                <li class="region-block__item">
+                                    <a href="#" class="region-block__link active">
+                                        Моршанск
+                                    </a>
+                                </li>
+                                <li class="region-block__item">
+                                    <a href="#" class="region-block__link active">
+                                        Уварово
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2 class="categories-dropdown__title">
+                        Цены на автозапчасти, автокосметику и автоаксессуары в других регионах
+                    </h2>
+                    <!-- Dropdown column -->
+                    <div class="categories-dropdown__column">
+                        <ul class="categories-dropdown__list">
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Авто</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Бытовая техника</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для дома</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для офиса</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Интимные товары</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Книги, полиграфическая и рекламная продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Dropdown column -->
+                    <div class="categories-dropdown__column">
+                        <ul class="categories-dropdown__list">
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Ритуальные принадлежности (венки, гробы и др.)</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Производство энергоносителей</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для дома</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Все для офиса</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Интимные товары</a>
+                            </li>
+                            <li class="categories-dropdown__item">
+                                <a href="#" class="categories-dropdown__link">Книги, полиграфическая и рекламная продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="vendors/plugins.min.js"></script>
     <script src="js/main.js"></script>
 </body>

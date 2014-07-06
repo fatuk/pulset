@@ -74,4 +74,10 @@ $(function() {
         $(this).next().show();
     });
 
+    // Colorbox
+    $('.js-modal').colorbox({
+        inline: true,
+        width: 800
+    });
+
 });

@@ -7,6 +7,13 @@
     }
 }
 
+// Remove dotted outline
+a, button, input, textarea, select {
+    &:focus {
+        outline: none;
+    }
+}
+
 body {
     // min-width: 1024px;
     min-width: 1280px;
@@ -61,4 +68,8 @@ html, body {
 .main-container {
     width: (690 / @base-width * 100%);
     float: left;
+}
+
+.hide {
+    display: none;
 }
