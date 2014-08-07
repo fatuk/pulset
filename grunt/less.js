@@ -1,6 +1,6 @@
 module.exports = {
     options: {
-        sourceMap: true,
+        sourceMap: false,
         sourceMapFilename: 'css/style.css.map',
         sourceMapRootpath: '../',
         yuicompress: true,
